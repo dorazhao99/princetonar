@@ -1,18 +1,40 @@
 import * as React from "react"
 import {
   Header,
-  Map
+  Map,
+  Card
 } from '../components';
 
 import css from './index.css';
 // markup
+const places = [
+  {
+    name: "Stanhope Hall",
+    longitude: -74.65997895830495,
+    latitude: 40.348925748332896,
+  },
+  {
+    name: "Double Sights",
+    longitude: -74.65506645397396,
+    latitude: 40.34940165404589,
+  },
+  {
+    name: "Frist Campus Center",
+    longitude: -74.65520130063396,
+    latitude: 40.34704682387998,
+  },
+]
+
 const IndexPage = () => {
   return (
     <div className = "root">
       <title> Home Page </title>
       <Header/>
-      <div>
-        <Map/>
+      <div className = "content">
+        <Map places={places}/>
+        <div>
+          <Card/>
+        </div>
       </div>
     </div>
   )

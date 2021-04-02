@@ -1,2 +1,4 @@
 export { default as Header } from './Header/Header';
 export { default as Map } from './Map/Map';
+export { default as Markers } from './Markers/Markers';
+export {default as Card } from './Card/Card';

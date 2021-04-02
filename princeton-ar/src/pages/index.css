@@ -1,27 +1,8 @@
 @import '../site.css';
 
-.root {
-  padding: 4vh 4vw;
-}
-
-.introWrapper {
+.content {
   display: flex;
-  align-content: center;
-  margin-bottom: 12vh;
-}
+  flex-direction: row;
+  justify-content:space-between;
 
-.introTitle {
-  font-family: var(--defaultSerifFont);
-  font-size: 48px;
-  margin: 12vh 0 4vh 0;
-}
-
-.introText {
-  font-family: var(--defaultSanSerifFont);
-  font-size: 24px;
-}
-
-.resume {
-  width: 50%;
-  height: auto;
 }
