@@ -29,8 +29,10 @@
 
 .link:hover,
 .home:hover {
-  color: var(--siteGreen);
+  font-weight: bolder;
+  text-decoration: underline;
 }
+
 
 @media screen and (max-width: 1000px) {
   .home {

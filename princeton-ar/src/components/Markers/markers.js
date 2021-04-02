@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react"
 import mapboxgl from "mapbox-gl"
 
-const Marker = ({ map, place }) => {
+const Marker = ({ map, place, parentCallback }) => {
   const markerRef = useRef()
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const Marker = ({ map, place }) => {
       .addTo(map)
 
     marker.getElement().addEventListener('click', () => {
-      alert("Clicked");
+      parentCallback(place.name);
     });
     return () => marker.remove()
   })
@@ -18,12 +18,13 @@ const Marker = ({ map, place }) => {
   return <div ref={markerRef} />
 }
 
-const Markers = ({ map, places }) => {
+const Markers = ({ map, places, parentCallback }) => {
+  console.log(places, parentCallback)
   return (
     <>
       {places &&
         places.map(place => (
-          <Marker key={place.name} map={map} place={place} />
+          <Marker key={place.name} map={map} place={place} parentCallback={parentCallback}/>
         ))}
     </>
   )

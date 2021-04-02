@@ -8,7 +8,7 @@ import {
 import "mapbox-gl/dist/mapbox-gl.css"
 
 // replace with your own Mapbox token
-const MAPBOX_TOKEN = ""
+const MAPBOX_TOKEN = "pk.eyJ1IjoiZHo5OSIsImEiOiJja216azRrangwYXdkMnVsY2lqYnJ4OTZtIn0.tOp_RGtMbvQ1hyrVBXiFyg"
 
 const mapContainerStyle = {
   width: "70%",
@@ -19,6 +19,11 @@ const Map = props => {
   const mapContainerRef = useRef(null)
 
   const [map, setMap] = useState(null)
+  const [place, setPlace] = useState('stanhope')
+
+  function parentCallback(place) {
+      props.handeChange(place)
+  }
 
   useEffect(() => {
     const map = new mapboxgl.Map({
@@ -70,7 +75,7 @@ const Map = props => {
 
   return (
     <div ref={mapContainerRef} style={mapContainerStyle}>
-      {props.places && map && <Markers map={map} places={props.places} />}
+      {props.places && map && <Markers map={map} places={props.places} parentCallback={parentCallback}/>}
     </div>
   )
 }

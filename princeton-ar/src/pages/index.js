@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useRef, useState, useEffect } from "react"
 import {
   Header,
   Map,
@@ -25,15 +25,32 @@ const places = [
   },
 ]
 
+const places_info = {
+  "Stanhope Hall" : {
+    bio: "This is Stanhope"
+  },
+  "Frist Campus Center": {
+    bio: "This is Frist"
+  },
+  "Double Sights" : {
+    bio: "This is Double Sights"
+  }
+}
 const IndexPage = () => {
+  const [place, setPlace] = useState('Stanhope Hall')
+
+  function handleChange(name) {
+      setPlace(name)
+  }
+
   return (
     <div className = "root">
       <title> Home Page </title>
       <Header/>
       <div className = "content">
-        <Map places={places}/>
+        <Map places={places} handeChange={handleChange}/>
         <div>
-          <Card/>
+          <Card title={place}/>
         </div>
       </div>
     </div>
