@@ -1,13 +1,14 @@
 @import '../../site.css';
 
 .cardcontainer {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(1, 1, 1, 0.25);
   border-radius: 8px;
   padding: 8vh 6vw;
-  margin-left: 2vw;
-  height: 50vh;
-  min-width: 40vw;
-  background-color: white;
+  margin-left: 4vw;
+  height: 40vh;
+  width: 30vw;
+  background-color: #282828;
+  display: flex;
 }
 
 .cardcontainer.hover .flipper {
@@ -27,6 +28,7 @@
 .cardcontent {
   display: flex;
   flex-direction: column;
+  height: 40vh;
 }
 
 .title {
@@ -36,8 +38,16 @@
   text-decoration: none;
 }
 
-.body1 {
+.learnlink {
   font-size: 20px;
   font-family: var(--defaultSanSerifFont);
   text-decoration: none;
+}
+
+.learnlink:hover {
+  text-decoration: underline;
+}
+
+.textbody {
+  font-size: 20px;
 }

@@ -5,16 +5,16 @@ html, body {
   margin: 0;
   min-height: 100%;
   min-width: 100%;
-  /* background-color: #bde0eb; */
+  background-color: #121212;
+  font-family: var(--defaultSanSerifFont);
+  color: #EEEEEE;
 }
 
 :root {
   /* ================ Colors ================ */
   --siteDarkColor: #353535;
-  --siteLightColor: #E9E7DC;
-  --sitePink: #EBBEBE;
-  --siteGreen: #96BFB0;
-  --siteYellow: #FFD482;
+  --siteLightColor: #EEEEEE;
+  --siteAccent: #3FB1CE;
 
   /* ================ Fonts ================ */
   --defaultSerifFont: 'Libre Baskerville', serif;
@@ -25,6 +25,24 @@ html, body {
   padding: 4vh 4vw;
 }
 
+h1 {
+  font-family: var(--defaultSanSerifFont);
+  font-weight: bold;
+  font-size: 48;
+  color: white;
+}
+
+h2 {
+  font-family: var(--defaultSanSerifFont);
+  font-weight: bold;
+  font-size: 36;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: var(--siteAccent);
+}
 /* ================ Custom media queries ================ */
 
 @custom-media --viewportSmall (max-width: 550px);

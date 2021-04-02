@@ -7,31 +7,31 @@ const Card = props => {
     return (
       <div className = "cardcontainer">
         <div className = "cardcontent">
-          <div className = "title">
+          <h2>
             {props.title}
-          </div>
+          </h2>
           <div>
             {
               flip ? (
                 <div>
-                  <p className = "body1">
+                  <p className = "textbody">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod \
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, \
                   </p>
-                  <a href={'/resources/stanhope'} target="_blank" rel="noopener noreferrer"> LEARN MORE &#8594; </a>
+                  <a className = "learnlink" href={'/resources/stanhope'} target="_blank" rel="noopener noreferrer"> LEARN MORE &#8594; </a>
                 </div>
               ) : (
                 <div>
-                  <p className = "body1">
+                  <p className = "textbody">
                     This AR filter
                   </p>
-                  <a href={'/resources/ar1'} target="_blank" rel="noopener noreferrer"> LEARN MORE &#8594; </a>
+                  <a className = "learnlink" href={'/resources/ar1'} target="_blank" rel="noopener noreferrer"> LEARN MORE &#8594; </a>
                 </div>
               )
             }
           </div>
           <div>
-            <p className = "body1">
+            <p className = "textbody">
               Use AR Filter XYZ here.
             </p>
           </div>

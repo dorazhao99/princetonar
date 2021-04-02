@@ -12,7 +12,7 @@
 
 .home {
   flex: 0 0 67%;
-  color: var(--siteDarkColor);
+  color: var(--siteLightColor);
   font-weight: bold;
   font-size: 24px;
   font-family: var(--defaultSanSerifFont);
@@ -22,7 +22,7 @@
 .link {
   margin-left: 3.5vw;
   font-size: 20px;
-  color: var(--siteDarkColor);
+  color: var(--siteLightColor);
   font-family: var(--defaultSanSerifFont);
   text-decoration: none;
 }

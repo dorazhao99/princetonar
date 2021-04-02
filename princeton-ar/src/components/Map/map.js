@@ -11,7 +11,7 @@ import "mapbox-gl/dist/mapbox-gl.css"
 const MAPBOX_TOKEN = "pk.eyJ1IjoiZHo5OSIsImEiOiJja216azRrangwYXdkMnVsY2lqYnJ4OTZtIn0.tOp_RGtMbvQ1hyrVBXiFyg"
 
 const mapContainerStyle = {
-  width: "70%",
+  width: "100%",
   height: "80vh",
 }
 
@@ -29,7 +29,7 @@ const Map = props => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       accessToken: MAPBOX_TOKEN,
-      style: "mapbox://styles/mapbox/streets-v11",
+      style: "mapbox://styles/mapbox/dark-v10",
       // Empire State Building [lng, lat]
       center: [-74.6551, 40.3431],
       zoom: 15,
