@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+:root {
+  /* ================ Colors ================ */
+  --siteDarkColor: #353535;
+  --siteLightColor: #E9E7DC;
+  --sitePink: #EBBEBE;
+  --siteGreen: #96BFB0;
+  --siteYellow: #FFD482;
+
+  /* ================ Fonts ================ */
+  --defaultSerifFont: 'Libre Baskerville', serif;
+  --defaultSanSerifFont: 'Nunito';
+}
+
+.root {
+  padding: 4vh 4vw;
+}
+
+/* ================ Custom media queries ================ */
+
+@custom-media --viewportSmall (max-width: 550px);
+@custom-media --viewportMedium (max-width: 768px);
+@custom-media --viewportLarge (max-width: 1024px);
+@custom-media --viewportLargeWithPaddings (max-width: 1128px);
+@custom-media --viewportXLarge (max-width: 1921px);
