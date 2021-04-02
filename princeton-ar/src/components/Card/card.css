@@ -6,7 +6,22 @@
   padding: 8vh 6vw;
   margin-left: 2vw;
   height: 50vh;
+  min-width: 40vw;
   background-color: white;
+}
+
+.cardcontainer.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.cardflipper {
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip:hover {
+  cursor: pointer;
 }
 
 .cardcontent {

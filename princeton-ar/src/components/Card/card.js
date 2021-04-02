@@ -35,7 +35,7 @@ const Card = props => {
               Use AR Filter XYZ here.
             </p>
           </div>
-          <div onClick={() => setFlip(!flip)}>
+          <div className = "flip" onClick={() => setFlip(!flip)}>
             <MdLoop /> <span className = "body1"> Flip </span>
           </div>
         </div>
