@@ -1,9 +1,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `gatsby-example-using-markdown-pages`,
-    description: `Start your new blog using markdown files`,
-    author: `@gatsbyjs`,
+    title: `Princeton AR Project`,
+    description: `Princeton AR project`,
+    author: `@princetonar`,
   },
   plugins: [
     {
@@ -15,4 +15,5 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
   ],
+  pathPrefix: "/princetonar",
 }
