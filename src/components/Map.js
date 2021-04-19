@@ -19,11 +19,11 @@ const Map = props => {
   function parentCallback(place) {
       props.handeChange(place)
   }
-  console.log(process.env.MAPBOX)
+  console.log(process.env.GATSBY_MAPBOX)
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      accessToken: process.env.MAPBOX,
+      accessToken: process.env.GATSBY_MAPBOX,
       style: "mapbox://styles/mapbox/dark-v10",
       // Empire State Building [lng, lat]
       center: [-74.6551, 40.3431],
