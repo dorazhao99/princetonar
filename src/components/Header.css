@@ -11,7 +11,7 @@
 }
 
 .home {
-  flex: 0 0 67%;
+  flex: 0 0 65%;
   color: var(--siteLightColor);
   font-weight: bold;
   font-size: 24px;

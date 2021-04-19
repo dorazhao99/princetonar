@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react"
 import Header from '../components/Header';
 import Map from '../components/Map';
-import Card from '../components/Card'; 
+import Card from '../components/Card';
 
 import css from './index.css';
 // markup
@@ -48,7 +48,7 @@ const IndexPage = () => {
       <div className = "content">
         <Map places={places} handeChange={handleChange}/>
         <div>
-          <Card title={place}/>
+          <Card title={place} description={places_info[place]['bio']}/>
         </div>
       </div>
     </div>

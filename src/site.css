@@ -23,6 +23,7 @@ html, body {
 
 .root {
   padding: 4vh 4vw;
+  height: 80vh;
 }
 
 h1 {
