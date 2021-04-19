@@ -19,7 +19,7 @@ const Map = props => {
   function parentCallback(place) {
       props.handeChange(place)
   }
-  console.log(process.env.MAPBOX)
+
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
