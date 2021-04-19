@@ -12,6 +12,10 @@ module.exports = {
         name: `markdown-pages`,
         path: `${__dirname}/src/markdown-pages`,
       },
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["MAPBOX"]
+      },
     },
     `gatsby-transformer-remark`,
   ],

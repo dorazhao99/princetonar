@@ -19,6 +19,7 @@
     "@turf/bbox": "^6.3.0",
     "@turf/helpers": "^6.3.0",
     "gatsby": "^3.1.2",
+    "gatsby-plugin-env-variables": "^2.1.0",
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-transformer-remark": "^3.2.0",
     "mapbox-gl": "^2.2.0",
