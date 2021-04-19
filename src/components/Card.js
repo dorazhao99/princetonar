@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "gatsby";
-import css from './card.css';
+import css from './Card.css';
 import { MdLoop } from "react-icons/md";
 const Card = props => {
     const [flip, setFlip] = useState(true)

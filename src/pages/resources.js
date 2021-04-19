@@ -1,9 +1,7 @@
 import React, { useRef, useState, useEffect } from "react"
-import {
-  Header,
-  Map,
-  Card
-} from '../components';
+import Header from '../components/Header';
+import Map from '../components/Map';
+import Card from '../components/Card'; 
 
 import css from './index.css';
 // markup

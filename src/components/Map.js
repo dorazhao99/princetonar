@@ -2,9 +2,7 @@ import React, { useRef, useEffect, useState } from "react"
 import mapboxgl from "mapbox-gl"
 import bbox from "@turf/bbox"
 import { multiPoint } from "@turf/helpers"
-import {
-  Markers
-} from '../../components';
+import Markers from '../components/Markers';
 import "mapbox-gl/dist/mapbox-gl.css"
 
 const mapContainerStyle = {

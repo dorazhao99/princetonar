@@ -1,4 +1,4 @@
-@import '../../site.css';
+@import '../site.css';
 
 .cardcontainer {
   box-shadow: 0px 4px 4px rgba(1, 1, 1, 0.25);
