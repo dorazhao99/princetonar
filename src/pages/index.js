@@ -12,6 +12,11 @@ const places = [
     latitude: 40.348925748332896,
   },
   {
+    name: "Firestone Library",
+    longitude: -74.65686200267893,
+    latitude: 40.34992168126388,
+  },
+  {
     name: "Double Sights",
     longitude: -74.65506645397396,
     latitude: 40.34940165404589,
@@ -25,13 +30,19 @@ const places = [
 
 const places_info = {
   "Stanhope Hall" : {
-    bio: "This is Stanhope"
+    bio: "Home to Princeton University's African American Studies Department, Stanhope Hall is named for Samuel Stanhope Smith, the University's seventh President. We chose to replace the Stanhope name because Smith was a proponent of geographic racism and an enslaver.",
+    artitle: "Rename Stanhope!",
+    ar: "Our AR filter replaces the Stanhope name with surnames of people of color who have made an impact on this campus. The names includes activist Helen Zia '73, Supreme Court Justice Sonia Sotomayor '76, and former First Lady Michelle Obama '85."
+  },
+  "Firestone Library": {
+    bio: "Firestone Library is one of the most well-known study spaces on campus and is named for Harvey S. Firestone Sr. We chose to replace Firestone's name because of his exploitation of African workers on his rubber plantations in Liberia and his engagement in imperialist foreign policy.",
+    artitle: "Rename Firestone!",
   },
   "Frist Campus Center": {
-    bio: "This is Frist"
+    bio: "Frist Campus Center is the hub of student life on campus. On the front of Frist, there are two statues of Benjamin Franklin and Joseph Henry. We chose to replace these statues with iconography that better reflects students of color on campus, many of whom have had moments of joy in Frist."
   },
   "Double Sights" : {
-    bio: "This is Double Sights"
+    bio: "Designed by Walter Hood, the Double Sights Momument was intended to "
   }
 }
 const IndexPage = () => {
@@ -48,7 +59,7 @@ const IndexPage = () => {
       <div className = "content">
         <Map places={places} handeChange={handleChange}/>
         <div>
-          <Card title={place} description={places_info[place]['bio']}/>
+          <Card title={place} description={places_info[place]['bio']} artitle = {places_info[place]['artitle']} ar={places_info[place]['ar']}/>
         </div>
       </div>
     </div>

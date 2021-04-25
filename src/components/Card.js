@@ -22,7 +22,7 @@ const Card = props => {
             <a className = "learnlink" href={'/resources/stanhope'} target="_blank" rel="noopener noreferrer"> LEARN MORE &#8594; </a>
             <p/>
             <p className = "textbody">
-              Use AR filter here
+              Use the AR filter, <i> {props.artitle} </i>, here.
             </p>
             <span className = "flip" onClick={() => flip()}>
               <MdLoop /> <span className = "body1"> Flip </span>
@@ -30,15 +30,15 @@ const Card = props => {
            </div>
           <div className="back">
             <h2>
-              AR Filter
+              {props.artitle}
             </h2>
             <p className = "textbody">
-              AR description
+              {props.ar}
             </p>
             <a className = "learnlink" href={'/resources/stanhope'} target="_blank" rel="noopener noreferrer"> LEARN MORE &#8594; </a>
             <p/>
             <p className = "textbody">
-              Use AR filter here
+              Use the AR filter, <i> {props.artitle} </i>, here.
             </p>
             <span className = "flip" onClick={() => flip()}>
               <MdLoop /> <span className = "body1"> Flip </span>

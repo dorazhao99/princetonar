@@ -1,0 +1,9 @@
+@import '../site.css';
+
+.blog-post {
+  width: 90%
+}
+
+.blog-post-content {
+  font-size: 18px;
+}
