@@ -7,7 +7,7 @@ This is the website portion of the Princeton AR Project, initially built in the 
 
 ## Requirements
 * Gatsby
-* Mapbox API Token 
+* Mapbox API Token -- store the Mapbox API token in a ```.env``` file under the environment variable name ```MAPBOX```. 
 
 ## Commands
 
