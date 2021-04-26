@@ -23,4 +23,9 @@ To deploy the website to Heroku, use the following command. This will deploy the
 ```
 
 ## Structure
-
+The code for the project is stored in the ```src``` folder. The file structure is as follows:
+* ```/components```: Contains the different components (e.g. header, buttons, etc.) that can be used in ```/pages```.
+* ```/images```: Contains any static images used on the website.
+* ```/markdown-pages```: Contains the content for the Markdown pages under the Resource tab of the website. 
+* ```/pages```: Contains the code for the pages of the website. 
+* ```/templates```: Contains the template for the blog component (e.g. the Markdown pages). 
