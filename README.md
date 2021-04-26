@@ -11,10 +11,10 @@ This is the website portion of the Princeton AR Project, initially built in the 
 
 ## Commands
 
-To start developing on the site, use the following command. The site is now running at http://localhost:8000.
+After downloading Gatsby CLI, start developing the website by using the following command. The site will be running at http://localhost:8000.
 
 ```shell
-    npm run develop
+    gatsby develop
 ```
 
 To deploy the website to Heroku, use the following command. This will deploy the website to https://princeton-ar.herokuapp.com. 
