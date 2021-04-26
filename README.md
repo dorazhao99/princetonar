@@ -3,7 +3,7 @@
 </h1>
 
 ##  Overview
-This is the website portion of the Princeton AR Project, initially built in the Spring of 2021 for the course SOC 414 / COS 415. The website is built using Gatsby and Mapbox. It is currently deployed to https://princeton-ar.herokuapp.com. 
+This is the website portion of the Princeton AR Project, initially built in the Spring of 2021 for the course SOC 414 / COS 415. The website is built using Gatsby with a Mapbox integration. It is currently deployed to https://princeton-ar.herokuapp.com. 
 
 ## Requirements
 * Gatsby
